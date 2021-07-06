@@ -3289,13 +3289,13 @@ hr {
 @media (max-width: 575px) {
   /* line 19, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
   .header-area {
-    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    /* box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1); */
   }
 }
 
 /* line 30, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
 .header-area .header-top {
-  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.3), rgb(0, 12, 12)), url(../img/hero/h1_hero.jpg);
+  background-color: black;
   padding: 0px 0px;
 }
 
@@ -3361,25 +3361,7 @@ hr {
   transition: 0.3s;
   text-transform: capitalize;
 }
- .product-menu ul li a {
-  color: #0d2d3e;
-  font-weight: 600;
-  padding: 15px 2px;
-  display: block;
-  font-size: 15px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  text-transform: capitalize;
-  color:#014b85;
-}
- .product-menu ul li {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  margin: 0 22px;
-}
+ 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 75, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
   .main-header .main-menu ul li a {
@@ -3681,7 +3663,7 @@ hr {
 
 /* line 18, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
 .slider-height2 {
-  height: 400px;
+  height: 500px;
   background-size: cover;
 }
 
@@ -5261,15 +5243,15 @@ hr {
 
 /* line 1, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area {
-background-color: black;
-opacity: 0.8;
+background-color: rgb(241, 241, 241);
+/* opacity: 0.8; */
 }
 
 /* line 4, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-pera p {
   color: #3B4855;
   padding-right: 52px;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 31px;
   line-height: 1.8;
 }
@@ -5288,8 +5270,7 @@ opacity: 0.8;
 
 /* line 22, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle h4 {
-  color: #15213d;
-  font-size: 22px;
+  font-size: 16px;
   margin-bottom: 29px;
   font-weight: 700;
 }
@@ -5301,7 +5282,8 @@ opacity: 0.8;
 
 /* line 31, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle ul li a {
-  color: rgb(163,160,160);
+  color: rgb(109, 109, 109);
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -5313,7 +5295,7 @@ opacity: 0.8;
 
 /* line 42, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle p {
-  color: rgb(165, 162, 162);
+  color: rgb(109, 109, 109);
 }
 
 /* line 46, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
@@ -5369,7 +5351,7 @@ opacity: 0.8;
 .footer-bottom-area .footer-copy-right p {
   color: #fff;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   margin-bottom: 12px;
 }
@@ -5448,7 +5430,9 @@ opacity: 0.8;
 }
 
 .single-footer-caption .footer-number p{
-  color: white;
+  color: #191d34;
+  font-weight: bold;
+  
 }
 
 /* line 4, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */
