@@ -3066,7 +3066,7 @@ hr {
 
 .specification .subspec li{
   color: #072366;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 30px;
   list-style-type: square;
 }
@@ -3079,10 +3079,9 @@ hr {
 
 .part2 .subspec li{
   list-style-type: circle;
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 35px;
-  color: #072366;
+  color: #FF3514;
 }
 
 .part2 .subspec1 li{
@@ -5318,7 +5317,9 @@ background-color: rgb(241, 241, 241);
   color: #C2C5DB;
   border-radius: 0px;
 }
-
+.industries h2{
+  font-weight: bold;
+}
 /* line 60, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-form form .form-icon button {
   border: 0;

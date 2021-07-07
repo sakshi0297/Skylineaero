@@ -41,7 +41,7 @@
     <header>
         <!-- Header Start -->
         <div class="header-area">
-            <div class="main-header ">
+            <div class="main-header">
                 <div class="header-top d-none d-lg-block">
                     <div class="container">
                         <div class="col-xl-12">
@@ -60,12 +60,12 @@
                     </div>
                 </div>
                 <div class="header-bottom header-sticky">
-                    <div class="container">
+                    <div class="container-fluid p-0" style="overflow-x: hidden; overflow-y: hidden;">
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="100%"></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="60%" class="ml-100"></a>
                                 </div>
                             </div>
                             <div class="col-xl-9 col-lg-8">
@@ -75,10 +75,24 @@
                                         <nav> 
                                             <ul id="navigation">                                                                                          
                                                 <li class="active"><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="project.html">Project</a></li>
-                                                <li><a href="blog.html">Blog</a>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Products
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
+                                                      <a class="dropdown-item" href="product1.html">UF-15-LIDAR</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">UF-2-AG-MAP</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">Tethered Station & drones</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">USV-ORCA-1</a>
+                                                    </div>
+                                                  </li>                                 
+                                                <li><a href="">Contact</a></li>
+                                                <!-- <li><a href="blog.html">Blog</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">Blog</a></li>
                                                         <li><a href="blog_details.html">Blog Details</a></li>
@@ -91,8 +105,8 @@
                                                         <li><a href="services_details.html">Services Details</a></li>
                                                         <li><a href="elements.html">Element</a></li>
                                                     </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                </li> -->
+                                                
                                             </ul>
                                         </nav>
                                     </div>
@@ -116,24 +130,7 @@
                             </div>
                             
                         </div>
-                        <!-- ------product-menu -->
                         
-                        <div class="col-lg-12">
-                            <div class="menu-wrapper d-flex align-items-center">
-                                <!-- Main-menu -->
-                                <div class="product-menu d-none d-lg-block" style="margin-left: 40%;">
-                                    <nav> 
-                                        <ul
-                                        id="navigation" >                                                                       
-                                            <li class="active"><a href="product1.html">UF-15-LIDAR</a></li>
-                                            <li><a href="#">UF-2-AG-MAP</a></li>
-                                            <li><a href="#">Tethered Station & drones</a></li>
-                                            <li><a href="#">USV-ORCA-1</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
@@ -143,6 +140,7 @@
         
         <!-- Header End -->
     </header>
+
     <main>
 
         <div class="allmargins container-fluid mt-5">
@@ -151,9 +149,9 @@
                     <div class="container">
                         <div class="section-tittle">
                             <!-- <span class="element">Projects</span> -->
-                            <h2 style="margin-top:12%;padding-left: 25%;">UF-15-LIDAR</h2><br>
-                            <h3 style="font-weight: bold;padding-left: 25%;">UAV built to scale</h3>
-                            <h3 style="padding-left: 25%;">Fixed-wing drone with sensors, endurance, and communications for large-scale mapping projects</h3><br>
+                            <h2 style="margin-top:12%;padding-left: 25%;">Tethered Station & drones</h2><br>
+                            <!-- <h3 style="font-weight: bold;padding-left: 25%;">UAV built to scale</h3> -->
+                            <h3 style="padding-left: 25%;">LIGH-T Station & SAFE-T2 Station</h3><br>
                             <a href="#" class="btn w-btn wantToWork-btn" style="margin-left: 25%;">Send an inquiry<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
@@ -172,28 +170,36 @@
                     <div class="row">
                         <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
                             <ul>
-                                <li style="color:#f73214">Fly farther and longer</li>
-                                <li style="font-size: medium;">Long-range and high-endurance</li>
+                                <li style="color:#f73214">Applications</li>
                             </ul><br>
-                            <ul class="subspec">
-                                <li>Up to 20 km communications range over radio</li>
-                                <li>Unlimited communications range over 3G (in network)</li>
-                                <li>Up to 110 minutes flight time</li>
-                                <li>BVLOS-ready</li>
-                                <li>Cover up to 2,400 acres (9.7 km2) in a single flight at 120 m flight height</li>
-                            </ul>
+                            <h3><b>1. Airport Maintenance</b></h3>
+                            <ul class="subspec ml-4">  
+                                <li>PAPI instrument calibration
+                                    The Precision Approach Path Indicator (PAPI) is a 4
+                                    light units block located beside landing runways, that
+                                    provides visual guidance information to pilots for
+                                    acquiring and maintaining a</li>
+                            </ul><br>
+                            <h3><b>2. PUBLIC EVENT SURVEILLANCE</b></h3>
+                                <ul class="subspec ml-4">
+                                    <li>Crowd Monitoring</li>
+                                    <li>Traffic Monitoring</li>
+                                    <li>Traffic Management</li>
+                                    <li>Continuous Fire and Perimeter surveillance (oil and Gas Industry) etc.</li>
+                                </ul>
                         </div>
                         
                             <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
-                                <ul>
-                                    <li>HD Camera Specifications</li>
-                                </ul><br>
-                                <ul class="subspec">
-                                    <li>True global shutter</li>
-                                    <li>Real-time camera to GCS link for on-the-fly quality control</li>
-                                    <li>Fully-integrated industrial camera</li>
-                                    <li>Up to 1 cm GSD imagery</li>
-                                    <li>Image resolution is 21.4 MP</li>
+                                <li style="color:#f73214">Why Tethered Drones?</li>
+                                <ul class="subspec ml-4 mt-5">
+                                    <li><b>Uninterrupted flight time</b></li>
+                                    <p style="font-size: 15px;">Hours of continuous flight, powered directly from the ground.</p>
+                                    <li><b>Secured high-speed data transfer</b></li>
+                                    <p>Un-hackable communications and data transfer through the tether</p>
+                                    <li><b>Push-button and plug and fly systems</b></li>
+                                    <p>Simple deployment, automated features and easy integration.</p>
+                                    <li><b>Safe, reliable and proven tether solutions</b></li>
+                                    <p>CE and IEC certified, safety battery in case of power loss and health monitoring application</p>
                                 </ul>
                             </div>
                         </div><br>
@@ -206,117 +212,138 @@
         </section>
         <!-- Want To work End -->
 
+        
         <!-- -----product details--- -->
 
         <div class="container">
             <div class="row">
 <!-- ----part 1----- -->
-                <div class="part1 col-lg-4 col-md-4 col-sm-10" style="background: #F5F5F5">
+                <div class="part1 col-lg-12 col-md-12 col-sm-12" style="background: #F5F5F5">
                     <div class="p-5">
-                    <h3 style="font-weight: bold; color:#f73214">High reliability and robust architecture:</h3><br>
-                    <ul class="subspec">
-                        <li>GNSS redundancy</li>
-                        <li>Independent and redundant flight termination system</li>
-                        <li>In-house developed autopilot with advanced safety functions.</li>
-                    </ul><br>
+                        <h2><u><b>Limitations Faced by Drone Operators</b></u></h2><br>      
+                        <h3 style="font-weight: bold; color:#f73214">Endurance</h3><br>
+                        <ul class="subspec">
+                            <li>Commercial drones have an average battery life of 20-30
+                                minutes. Which limits the flight time and means
+                                constant battery changes.</li>
+                        </ul><br>
 
-                    <h3 style="font-weight: bold; color:#f73214;">High-quality dual-sensor mapping:</h3><br>
-                    <ul class="subspec">
-                        <li>Simultaneous LiDAR and photogrammetry mapping. Benefit from true point cloud colorization which simplifies the classification process.</li>
-                    </ul><br>
+                        <h3 style="font-weight: bold; color:#f73214;">Reliability</h3><br>
+                        <ul class="subspec">
+                            <li>Drone accidents are mainly linked to signal losses,
+                                interference, fly-away or battery issues.
+                                </li>
+                        </ul><br>
 
-                    <h3 style="font-weight: bold; color:#f73214">Quick return on investment:</h3><br>
-                    <ul class="subspec">
-                        <li>Beat traditional airborne solutions by capturing
-                            high-resolution data on-demand without costly
-                            mobilization fees or long lead-times. Collect LiDAR
-                            and photogrammetry in a single flight, increasing
-                            productivity and decreasing operational costs.</li>
-                    </ul><br>
+                        <h3 style="font-weight: bold; color:#f73214">Legislation</h3><br>
+                        <ul class="subspec">
+                            <li>In many countries a tether is seen as a positive
+                                mitigation to operate in areas that would normally be
+                                restrictive or sensitive for drone ops.</li>
+                        </ul><br>
 
-                    <h3 style="font-weight: bold; color:#f73214">Accuracy matters:</h3><br>
-                    <ul class="subspec">
-                        <li>Direct georeferencing technology with the Applanix
-                            APX-15 enables centimeter-level accuracy for
-                            precision mapping.
-                            </li>
-                    </ul><br>
+                        <h2><u><b>Air Modules</b></u></h2><br>  
+                        <p style="font-size: 15px;">The Connection to the Drone</p>
+                        <img src="assets/img/gallery/connection.png" width="400px" height="200px">
+                    </div>
                 </div>
-                </div>
-<!-- ----------part2-------- --> 
-                <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                <div class="col-lg-7 col-md-7 col-sm-10" style="background: rgb(245, 245, 245);">
+            </div>
+        </div>        
+<!-- ----------part2-------- -->
+        <div class="container allmargins">
+            <div class="row">
+                <!-- <div class="col-lg-1 col-md-1 col-sm-1"></div> -->
+                <div class="col-lg-6 col-md-6 col-sm-10" style="background: rgb(245, 245, 245);">
                     <div class="px-4 pt-5">
-                    <h3>TECHNICAL SPECIFICATIONS</h3><br>
+                    <h3><u><b>TECHNICAL SPECIFICATIONS</b></u></h3><br>
+                    <h3>SAFE-T Station</h3><br>
                     <div class="row">
                         <div class="part2 col-lg-5 col-md-5 col-sm-5">
+                            
                             <ul class="subspec">
-                                <li>Endurance</li>
-                                <li>Weight (payload included)</li>
-                                <li>Wingspan / Length: </li>
-                                <li>Material</li>
-                                <li>Deployment time </li>
-                                <li>Cruise speed:</li>
-                                <li>Field of View / Scanning width: </li>
-                                <li>Point density: </li>
-                                <li>Point cloud accuracy:</li>
-                                <li>Maximum distance covered:</li>
-                                <li>Maximum surface area covered:</li>
-                                <li>Communication range: </li>
-                                <li>OPERATING CONDITIONS:</li>
-                                <li>Weather:</li>
-                                <li>Take-off & Landing altitude / ceiling:</li>
-                                <li>Landing space:</li>
+                                <li>Micro-tether length </li>
+                                <li>Operational Temperature</li>
+                                <li>Max continuous power</li>
+                                <li>Micro-tether management</li>
+                                <li>Secured Dual-Comms</li>
+                                
+                                <li>Power source requirement</li>
+                                <li>Power supply cable </li>
+                                <li>Built-in protection</li>
+                                <li>Ingress protection level</li>
+                                <li>Vehicle integration kit </li>
+                                <li>Dimensions</li>
+                                <li>Wi-Fi Connectivity</li>
+                                <br><br>
                             </ul>
                         </div>
                         <div class="part2 col-lg-7 col-md-7 col-sm-7">
                             <ul class="subspec1">
-                                <li>Up to 110 minutes</li>
-                                <li>17 kg (37.5 pounds)</li>
-                                <li>3.3 m / 1.6 m (10.8 ft / 5.2 ft)</li>
-                                <li>Composite (fiberglass, carbon, Kevlar), EPP foam</li>
-                                <li>8 min Take-off / Landing Catapult / Belly (all terrain)</li>
-                                <li>57 km/h (31 mph)</li>
-                                <li>46° / 102 m @ 120 m AGL (334 ft @394 ft AGL)</li>
-                                <li>50 pts/m² @ 80 m AGL in a one-way flight</li>
-                                <li>up to 10 cm horizontal / 5 cm vertical with a single overlap @80 m</li>
-                                <li>110 km (68 miles)</li>
-                                <li>5.2 km² @ 80 m / 9.7 km² @ 120 m</li>
-                                <li>Up to 55 km / 34 miles(820 ft AGL)</li>
-                                <li>35 km/h (19 kt) wind, light rain, -15 to 40°C</li>
-                                <li>0 to 2000 m ASL @ 0° - Ceiling up to 2750 m</li>
-                                <li>Typically 15 m x 50 m(50 ft x 165 ft)</li>
+                                <li>Up to 130m - 425 ft.</li>
+                                <li>-10 to 45° C (14° to 113° F)</li>
+                                <li>2200W cont. / 2800W peak</li>
+                                <li>10presets/Smart preprogrammed laws</li>
+                                <li>Fiber Optics & BPL</li>
+                                
+                                <li>200 - 250 VAC, 50 - 60 Hz,4kW min</li>
+                                <li>Type E</li>
+                                <li>Fuse</li>
+                                <li>IP54</li>
+                                <li>Hardware & Software</li>
+                                <li>610 x 410 x 265 mm (24’’x 16’’x 11’’)25kg (57lbs)</li>
+                                <li>Frequency 2.4GHz - 2.5GHz (2400MHz - 2483.5MHz) Encryption WEP/TKIP/AES</li>
                             </ul>
                         </div>
                     </div>
                     </div>
+                    
+                </div>
+<!-- -------------------------------------------------------- -->
+                <div class="col-lg-6 col-md-6 col-sm-10" style="background: rgb(245, 245, 245);">
+                    <div class="px-4 pt-5">
+                    <h3><u><b>TECHNICAL SPECIFICATIONS</b></u></h3><br>
+                    <h3>LIGH-T Station</h3><br>
+                    <div class="row">
+                        <div class="part2 col-lg-5 col-md-5 col-sm-5">
+                            
+                            <ul class="subspec">
+                                <li>Micro-tether length </li>
+                                <li>Output voltage</li>
+                                <li>Power (output) </li>
+                                <li>Safety battery</li>
+                                <li>Power input </li>
+                                <li>Data speed </li>
+                                <li>Built-in protection </li>
+                                <li>Tether Management System</li>
+                                <li>Vehicle integration kit</li>
+                                <li>Dimensions</li>
+                                <li>Total weight</li>
+                                <br><br>
+                            </ul>
+                        </div>
+                        <div class="part2 col-lg-7 col-md-7 col-sm-7">
+                            <ul class="subspec1">
+                                <li>Up to 70m - 229 ft.</li>
+                                <li>6S or 12S</li>
+                                <li>Up to 2500W (peak)</li>
+                                <li>switch onboard</li>
+                                <li>110 - 250 VAC, 50 - 60 Hz</li>
+                                <li>Up to 200 Mb/s</li>
+                                <li>Electronic crowbar / Circuit-breaker</li>
+                                <li>Manual vertical reel</li>
+                                <li>Hardware & Software</li>
+                                <li>538 mm x 405 mm x 250 mm 21’’ x 16’’ x 10’’</li>
+                                <li>20 kg - 44 lbs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
 
-        <!-- ----------part3-------- -->        
-        <div class="col-lg-12 col-md-12 col-sm-10 my-5" style="background: #F5F5F5;">
-            <div class="allmargins p-5">
-            <h2 style="font-size:25px; margin-left: 105px;color:#FE3514">Safety Systems</h2>
-            <p class="mt-5" style="margin-left: 105px; margin-right: 105px;">Dual link Automatic Dependent Surveillance - Broadcast (ADSB) transceiver</p>
-            <p style="margin-left: 105px; margin-right: 105px;">Assists with Detect and Avoid (DAA) functionality for Unmanned
-                Aircraft Systems (UAS) operations in the National Airspace System
-                (NAS)
-            </p>
-            <p  style="margin-left: 105px; margin-right: 105px;">Detects commercial aircraft threats on 1090MHz and 978MHz
-                within a 100 statute mile radius in real time. Transmits ADS-B on
-                978MHz (UAT) 20W nominal advanced automatic fail safe
-                modes, with emergency parachute. Flight termination system
-                developed following ED12-C/DO178-C DAL D aviation standard.
-                Safety analysis conducted according to recognized aerospace
-                guidelines ARP4754 and ARP4761.
-            </p>
-            <p  style="margin-left: 105px; margin-right: 105px;">Geocaging (fully configurable ceiling protection, geofencing,
-                forbidden zone protection) Real-time video navigation back-up
-                (looking down camera) Position and anti-collision strobe lights
-            </p>
-        </div>
-    </div>
+        
         
         <!-- -----product details ends--- -->
         

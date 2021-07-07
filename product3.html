@@ -41,7 +41,7 @@
     <header>
         <!-- Header Start -->
         <div class="header-area">
-            <div class="main-header ">
+            <div class="main-header">
                 <div class="header-top d-none d-lg-block">
                     <div class="container">
                         <div class="col-xl-12">
@@ -60,12 +60,12 @@
                     </div>
                 </div>
                 <div class="header-bottom header-sticky">
-                    <div class="container">
+                    <div class="container-fluid p-0" style="overflow-x: hidden; overflow-y: hidden;">
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="100%"></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="60%" class="ml-100"></a>
                                 </div>
                             </div>
                             <div class="col-xl-9 col-lg-8">
@@ -75,10 +75,24 @@
                                         <nav> 
                                             <ul id="navigation">                                                                                          
                                                 <li class="active"><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="project.html">Project</a></li>
-                                                <li><a href="blog.html">Blog</a>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Products
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
+                                                      <a class="dropdown-item" href="product1.html">UF-15-LIDAR</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="product2.html">UF-2-AG-MAP</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="product3.html">Tethered Station & drones</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="product4.html">USV-ORCA-1</a>
+                                                    </div>
+                                                  </li>                                 
+                                                <li><a href="">Contact</a></li>
+                                                <!-- <li><a href="blog.html">Blog</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">Blog</a></li>
                                                         <li><a href="blog_details.html">Blog Details</a></li>
@@ -91,8 +105,8 @@
                                                         <li><a href="services_details.html">Services Details</a></li>
                                                         <li><a href="elements.html">Element</a></li>
                                                     </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                </li> -->
+                                                
                                             </ul>
                                         </nav>
                                     </div>
@@ -116,24 +130,7 @@
                             </div>
                             
                         </div>
-                        <!-- ------product-menu -->
                         
-                        <div class="col-lg-12">
-                            <div class="menu-wrapper d-flex align-items-center">
-                                <!-- Main-menu -->
-                                <div class="product-menu d-none d-lg-block" style="margin-left: 40%;">
-                                    <nav> 
-                                        <ul
-                                        id="navigation" >                                                                       
-                                            <li class="active"><a href="product1.html">UF-15-LIDAR</a></li>
-                                            <li><a href="#">UF-2-AG-MAP</a></li>
-                                            <li><a href="#">Tethered Station & drones</a></li>
-                                            <li><a href="#">USV-ORCA-1</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
@@ -144,182 +141,101 @@
         <!-- Header End -->
     </header>
     <main>
-
-        <div class="allmargins container-fluid mt-5">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="container">
-                        <div class="section-tittle">
-                            <!-- <span class="element">Projects</span> -->
-                            <h2 style="margin-top:12%;padding-left: 25%;">UF-15-LIDAR</h2><br>
-                            <h3 style="font-weight: bold;padding-left: 25%;">UAV built to scale</h3>
-                            <h3 style="padding-left: 25%;">Fixed-wing drone with sensors, endurance, and communications for large-scale mapping projects</h3><br>
-                            <a href="#" class="btn w-btn wantToWork-btn" style="margin-left: 25%;">Send an inquiry<i class="ti-arrow-right"></i></a>
+        <!--? Hero Start -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height: 550px;">
+                <img class="d-block w-100" src="assets/img/gallery/carousel/3.jpg" style="height: 100%;" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Fly farther and longer</h1>
+                    <p>Long-range and high-endurance.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height: 550px;">
+                <img class="d-block w-100" src="assets/img/gallery/carousel/2.jpg" style="height: 100%;" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Fly farther and longer</h1>
+                    <p>Long-range and high-endurance.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height: 550px;">
+                <img class="d-block w-100" src="assets/img/gallery/carousel/1.jpg" style="height: 100%;" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Fly farther and longer</h1>
+                    <p>Long-range and high-endurance.</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- ------------slider ends---------- -->
+        <!-- <div class="slider-area2 section-bg2" style="background-image: url(assets/img/hero/hero5.png)">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 mb-3">
+                                <h2>UF-15-LIDAR</h2>
+                                <h2 style="font-size: 25px;">Fly farther and longer</h2>
+                            </div>
                         </div>
                     </div>
-                </div> 
-                <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                    <img src="assets/img/gallery/bg1.jpg" width="100%" height="100%">
-                </div> 
+                </div>
             </div>
-        </div>
-
+        </div> -->
+        <!-- Hero End -->
+        
         <!-- Services Area start -->
                 <!-- Want To work -->
-        <section class="allmargins wantToWork-area" style="background-color: rgb(245, 245, 245);">
+        <section class="allmargins wantToWork-area gray-bg ">
             <div class="container">
                 <div class="wants-wrapper">
-                    <div class="row">
-                        <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
-                            <ul>
-                                <li style="color:#f73214">Fly farther and longer</li>
-                                <li style="font-size: medium;">Long-range and high-endurance</li>
-                            </ul><br>
-                            <ul class="subspec">
-                                <li>Up to 20 km communications range over radio</li>
-                                <li>Unlimited communications range over 3G (in network)</li>
-                                <li>Up to 110 minutes flight time</li>
-                                <li>BVLOS-ready</li>
-                                <li>Cover up to 2,400 acres (9.7 km2) in a single flight at 120 m flight height</li>
-                            </ul>
-                        </div>
-                        
-                            <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
-                                <ul>
-                                    <li>HD Camera Specifications</li>
-                                </ul><br>
-                                <ul class="subspec">
-                                    <li>True global shutter</li>
-                                    <li>Real-time camera to GCS link for on-the-fly quality control</li>
-                                    <li>Fully-integrated industrial camera</li>
-                                    <li>Up to 1 cm GSD imagery</li>
-                                    <li>Image resolution is 21.4 MP</li>
-                                </ul>
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="wantToWork-caption wantToWork-caption2">
+                                <h2>Tethered Station & drones</h2>
+                                <p>We collect and analyze information about your general usage of the website, products, services, and courses.</p>
                             </div>
-                        </div><br>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <img src="assets/img/gallery/d1.jpg" width="350px" height="230px" style="border-radius: 50%;margin-top:5%">
+                        </div>
                         <div>
-                            <a href="#" class="btn w-btn wantToWork-btn mb-5 ml-5">Learn More <i class="ti-arrow-right"></i></a>
+                            <a href="product3_details.html" class="btn w-btn wantToWork-btn mb-5 ml-4">Learn More <i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Want To work End -->
-
-        <!-- -----product details--- -->
-
-        <div class="container">
-            <div class="row">
-<!-- ----part 1----- -->
-                <div class="part1 col-lg-4 col-md-4 col-sm-10" style="background: #F5F5F5">
-                    <div class="p-5">
-                    <h3 style="font-weight: bold; color:#f73214">High reliability and robust architecture:</h3><br>
-                    <ul class="subspec">
-                        <li>GNSS redundancy</li>
-                        <li>Independent and redundant flight termination system</li>
-                        <li>In-house developed autopilot with advanced safety functions.</li>
-                    </ul><br>
-
-                    <h3 style="font-weight: bold; color:#f73214;">High-quality dual-sensor mapping:</h3><br>
-                    <ul class="subspec">
-                        <li>Simultaneous LiDAR and photogrammetry mapping. Benefit from true point cloud colorization which simplifies the classification process.</li>
-                    </ul><br>
-
-                    <h3 style="font-weight: bold; color:#f73214">Quick return on investment:</h3><br>
-                    <ul class="subspec">
-                        <li>Beat traditional airborne solutions by capturing
-                            high-resolution data on-demand without costly
-                            mobilization fees or long lead-times. Collect LiDAR
-                            and photogrammetry in a single flight, increasing
-                            productivity and decreasing operational costs.</li>
-                    </ul><br>
-
-                    <h3 style="font-weight: bold; color:#f73214">Accuracy matters:</h3><br>
-                    <ul class="subspec">
-                        <li>Direct georeferencing technology with the Applanix
-                            APX-15 enables centimeter-level accuracy for
-                            precision mapping.
-                            </li>
-                    </ul><br>
-                </div>
-                </div>
-<!-- ----------part2-------- --> 
-                <div class="col-lg-1 col-md-1 col-sm-1"></div>
-                <div class="col-lg-7 col-md-7 col-sm-10" style="background: rgb(245, 245, 245);">
-                    <div class="px-4 pt-5">
-                    <h3>TECHNICAL SPECIFICATIONS</h3><br>
-                    <div class="row">
-                        <div class="part2 col-lg-5 col-md-5 col-sm-5">
-                            <ul class="subspec">
-                                <li>Endurance</li>
-                                <li>Weight (payload included)</li>
-                                <li>Wingspan / Length: </li>
-                                <li>Material</li>
-                                <li>Deployment time </li>
-                                <li>Cruise speed:</li>
-                                <li>Field of View / Scanning width: </li>
-                                <li>Point density: </li>
-                                <li>Point cloud accuracy:</li>
-                                <li>Maximum distance covered:</li>
-                                <li>Maximum surface area covered:</li>
-                                <li>Communication range: </li>
-                                <li>OPERATING CONDITIONS:</li>
-                                <li>Weather:</li>
-                                <li>Take-off & Landing altitude / ceiling:</li>
-                                <li>Landing space:</li>
-                            </ul>
-                        </div>
-                        <div class="part2 col-lg-7 col-md-7 col-sm-7">
-                            <ul class="subspec1">
-                                <li>Up to 110 minutes</li>
-                                <li>17 kg (37.5 pounds)</li>
-                                <li>3.3 m / 1.6 m (10.8 ft / 5.2 ft)</li>
-                                <li>Composite (fiberglass, carbon, Kevlar), EPP foam</li>
-                                <li>8 min Take-off / Landing Catapult / Belly (all terrain)</li>
-                                <li>57 km/h (31 mph)</li>
-                                <li>46° / 102 m @ 120 m AGL (334 ft @394 ft AGL)</li>
-                                <li>50 pts/m² @ 80 m AGL in a one-way flight</li>
-                                <li>up to 10 cm horizontal / 5 cm vertical with a single overlap @80 m</li>
-                                <li>110 km (68 miles)</li>
-                                <li>5.2 km² @ 80 m / 9.7 km² @ 120 m</li>
-                                <li>Up to 55 km / 34 miles(820 ft AGL)</li>
-                                <li>35 km/h (19 kt) wind, light rain, -15 to 40°C</li>
-                                <li>0 to 2000 m ASL @ 0° - Ceiling up to 2750 m</li>
-                                <li>Typically 15 m x 50 m(50 ft x 165 ft)</li>
-                            </ul>
-                        </div>
-                    </div>
+        <section class="allmargins about-low-area">
+           
+            <div class="col-xl-12 col-lg-12 col-md-10">
+                <div class="about-caption">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle">
+                        <!-- <span class="element">Projects</span> -->
+                        <center><h2 style="font-size: x-large;">Fly farther and longer<br>
+                        Long-range and high-endurance</h2>
+                        <h2 style="font-size: x-large;">Independent and redundant flight termination system</h2></center>
+                        
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- ----------part3-------- -->        
-        <div class="col-lg-12 col-md-12 col-sm-10 my-5" style="background: #F5F5F5;">
-            <div class="allmargins p-5">
-            <h2 style="font-size:25px; margin-left: 105px;color:#FE3514">Safety Systems</h2>
-            <p class="mt-5" style="margin-left: 105px; margin-right: 105px;">Dual link Automatic Dependent Surveillance - Broadcast (ADSB) transceiver</p>
-            <p style="margin-left: 105px; margin-right: 105px;">Assists with Detect and Avoid (DAA) functionality for Unmanned
-                Aircraft Systems (UAS) operations in the National Airspace System
-                (NAS)
-            </p>
-            <p  style="margin-left: 105px; margin-right: 105px;">Detects commercial aircraft threats on 1090MHz and 978MHz
-                within a 100 statute mile radius in real time. Transmits ADS-B on
-                978MHz (UAT) 20W nominal advanced automatic fail safe
-                modes, with emergency parachute. Flight termination system
-                developed following ED12-C/DO178-C DAL D aviation standard.
-                Safety analysis conducted according to recognized aerospace
-                guidelines ARP4754 and ARP4761.
-            </p>
-            <p  style="margin-left: 105px; margin-right: 105px;">Geocaging (fully configurable ceiling protection, geofencing,
-                forbidden zone protection) Real-time video navigation back-up
-                (looking down camera) Position and anti-collision strobe lights
-            </p>
-        </div>
-    </div>
-        
-        <!-- -----product details ends--- -->
-        
+</section>
         <!-- Want To work 2-->
         <section class="wantToWork-area">
             <div class="container">
@@ -343,12 +259,13 @@
             </div>
         </section>
         <!-- Want To work End 2-->
+        
     </main>
     <footer>
         <!-- Footer Start-->
 
         <div class="footer-area">
-            <div class="container pt-5">
+            <div class="container pt-50">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">     
@@ -395,7 +312,7 @@
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle mb-50">
                                 <h4>Newsletter</h4>
-                                <p>Subscribe our newsletter to get updates about our services</p>
+                                <p font-size: 15px;>Subscribe our newsletter to get updates about our services</p>
                             </div>
                             <!-- Form -->
                             <div class="footer-form">

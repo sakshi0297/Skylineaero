@@ -41,7 +41,7 @@
     <header>
         <!-- Header Start -->
         <div class="header-area">
-            <div class="main-header ">
+            <div class="main-header">
                 <div class="header-top d-none d-lg-block">
                     <div class="container">
                         <div class="col-xl-12">
@@ -60,12 +60,12 @@
                     </div>
                 </div>
                 <div class="header-bottom header-sticky">
-                    <div class="container">
+                    <div class="container-fluid p-0" style="overflow-x: hidden; overflow-y: hidden;">
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="100%"></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="60%" class="ml-100"></a>
                                 </div>
                             </div>
                             <div class="col-xl-9 col-lg-8">
@@ -75,10 +75,24 @@
                                         <nav> 
                                             <ul id="navigation">                                                                                          
                                                 <li class="active"><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="project.html">Project</a></li>
-                                                <li><a href="blog.html">Blog</a>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Products
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
+                                                      <a class="dropdown-item" href="product1.html">UF-15-LIDAR</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">UF-2-AG-MAP</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">Tethered Station & drones</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">USV-ORCA-1</a>
+                                                    </div>
+                                                  </li>                                 
+                                                <li><a href="">Contact</a></li>
+                                                <!-- <li><a href="blog.html">Blog</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">Blog</a></li>
                                                         <li><a href="blog_details.html">Blog Details</a></li>
@@ -91,8 +105,8 @@
                                                         <li><a href="services_details.html">Services Details</a></li>
                                                         <li><a href="elements.html">Element</a></li>
                                                     </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                </li> -->
+                                                
                                             </ul>
                                         </nav>
                                     </div>
@@ -116,24 +130,7 @@
                             </div>
                             
                         </div>
-                        <!-- ------product-menu -->
                         
-                        <div class="col-lg-12">
-                            <div class="menu-wrapper d-flex align-items-center">
-                                <!-- Main-menu -->
-                                <div class="product-menu d-none d-lg-block" style="margin-left: 40%;">
-                                    <nav> 
-                                        <ul
-                                        id="navigation" >                                                                       
-                                            <li class="active"><a href="product1.html">UF-15-LIDAR</a></li>
-                                            <li><a href="#">UF-2-AG-MAP</a></li>
-                                            <li><a href="#">Tethered Station & drones</a></li>
-                                            <li><a href="#">USV-ORCA-1</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
@@ -143,6 +140,7 @@
         
         <!-- Header End -->
     </header>
+
     <main>
 
         <div class="allmargins container-fluid mt-5">
@@ -151,9 +149,9 @@
                     <div class="container">
                         <div class="section-tittle">
                             <!-- <span class="element">Projects</span> -->
-                            <h2 style="margin-top:12%;padding-left: 25%;">UF-15-LIDAR</h2><br>
-                            <h3 style="font-weight: bold;padding-left: 25%;">UAV built to scale</h3>
-                            <h3 style="padding-left: 25%;">Fixed-wing drone with sensors, endurance, and communications for large-scale mapping projects</h3><br>
+                            <h2 style="margin-top:12%;padding-left: 25%;">UF-2-AG-MAP</h2><br>
+                            <!-- <h3 style="font-weight: bold;padding-left: 25%;">UAV built to scale</h3> -->
+                            <h3 style="padding-left: 25%;">Proffessional small UAV, MAP beyond the visible with the ease.</h3><br>
                             <a href="#" class="btn w-btn wantToWork-btn" style="margin-left: 25%;">Send an inquiry<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
@@ -172,28 +170,27 @@
                     <div class="row">
                         <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
                             <ul>
-                                <li style="color:#f73214">Fly farther and longer</li>
-                                <li style="font-size: medium;">Long-range and high-endurance</li>
+                                <li style="color:#f73214">Key Applications</li>
+                                <!-- <li style="font-size: medium;">Long-range and high-endurance</li> -->
                             </ul><br>
                             <ul class="subspec">
-                                <li>Up to 20 km communications range over radio</li>
-                                <li>Unlimited communications range over 3G (in network)</li>
-                                <li>Up to 110 minutes flight time</li>
-                                <li>BVLOS-ready</li>
-                                <li>Cover up to 2,400 acres (9.7 km2) in a single flight at 120 m flight height</li>
+                                <li>All application requiring temporal analysis or precise geolocation.</li>
+                                <li>Mapping & GIS</li>
+                                <li>Field trials</li>
+                                <li>Field inventory</li>
+                                <li>Large Scale Farms and Plantations Scouting</li>
                             </ul>
                         </div>
                         
                             <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
-                                <ul>
+                                <!-- <ul>
                                     <li>HD Camera Specifications</li>
-                                </ul><br>
-                                <ul class="subspec">
-                                    <li>True global shutter</li>
-                                    <li>Real-time camera to GCS link for on-the-fly quality control</li>
-                                    <li>Fully-integrated industrial camera</li>
-                                    <li>Up to 1 cm GSD imagery</li>
-                                    <li>Image resolution is 21.4 MP</li>
+                                </ul><br> -->
+                                <ul class="subspec mt-50">
+                                    <li>Precision Agriculture</li>
+                                    <li>Forest inventory and management</li>
+                                    <li>Traceability for Sustainability</li>
+                                    <li>Environmental and conservation</li>
                                 </ul>
                             </div>
                         </div><br>
@@ -206,6 +203,34 @@
         </section>
         <!-- Want To work End -->
 
+        <!-- ------Industries------- -->
+        
+        <div class="industries">
+        <div class="container allmargins">
+            <h1 style="font-size: 30px; font-weight: bold;">Industries -</h1>
+            <div class="row mt-80">
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/gallery/industries/1.jpg" style="border-radius: 50%; width:150px;">
+                            <h2>Agriculture</h2>
+                            <img src="assets/img/gallery/industries/2.jpg" style="border-radius: 50%; width:150px;">
+                            <h2>Forestry</h2>
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/img/gallery/industries/3.jpg" style="border-radius: 50%; width:150px;">
+                            <h2>Power & Utilities </h2>
+                            <img src="assets/img/gallery/industries/4.jpg" style="border-radius: 50%; width:150px;">
+                            <h2>Environmental & conservation</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
+            </div>
+        </div>
+        </div>
+
         <!-- -----product details--- -->
 
         <div class="container">
@@ -213,110 +238,186 @@
 <!-- ----part 1----- -->
                 <div class="part1 col-lg-4 col-md-4 col-sm-10" style="background: #F5F5F5">
                     <div class="p-5">
-                    <h3 style="font-weight: bold; color:#f73214">High reliability and robust architecture:</h3><br>
+                    <h2><u><b>KEY DIFFERENTIATION</b></u></h2><br>   
                     <ul class="subspec">
-                        <li>GNSS redundancy</li>
-                        <li>Independent and redundant flight termination system</li>
-                        <li>In-house developed autopilot with advanced safety functions.</li>
-                    </ul><br>
 
-                    <h3 style="font-weight: bold; color:#f73214;">High-quality dual-sensor mapping:</h3><br>
-                    <ul class="subspec">
-                        <li>Simultaneous LiDAR and photogrammetry mapping. Benefit from true point cloud colorization which simplifies the classification process.</li>
-                    </ul><br>
-
-                    <h3 style="font-weight: bold; color:#f73214">Quick return on investment:</h3><br>
-                    <ul class="subspec">
-                        <li>Beat traditional airborne solutions by capturing
-                            high-resolution data on-demand without costly
-                            mobilization fees or long lead-times. Collect LiDAR
-                            and photogrammetry in a single flight, increasing
-                            productivity and decreasing operational costs.</li>
-                    </ul><br>
-
-                    <h3 style="font-weight: bold; color:#f73214">Accuracy matters:</h3><br>
-                    <ul class="subspec">
-                        <li>Direct georeferencing technology with the Applanix
-                            APX-15 enables centimeter-level accuracy for
-                            precision mapping.
+                        <li><span style="color:#f73214; font-size: 15px;">Designed for best grade spectral data quality</span> and
+                            precisely geolocalized plant data. Fully integrated true
+                            multispectral camera for bird view, biomass and chlorophyll
+                            insights in one flight. With optional PPK activation for
+                            survey grade results.
+                            
                             </li>
-                    </ul><br>
+                    <br>
+
+
+                        <li><span style="color:#f73214">BVLOS-ready communications - </span> optional radio link or
+                            mobile connectivity via 3G network (4G-ready) for
+                            unlimited range.
+                            </li>
+                    <br>
+
+                        <li><span style="color:#f73214">Bird Take Off and Landing - BTOL -</span> - precise takeoffs and
+                            landings - high-angle (30 degrees) for restricted areas, low
+                            speed landing using distance measurement technology.
+                            </li>
+                    <br>
+
+                    
+                        <li><span style="color:#f73214">Easy-to-use Android™ mission planning and
+                            monitoring app -</span> - pre-flight checklist, no-fly zones, modern
+                            user interface, and in-flight data review.
+                        </li>                
+
+                    </ul>
+
+                    <img src="assets/img/gallery/d1.jpg" style="border-radius: 50%;" width="200px" height="200px">
                 </div>
                 </div>
 <!-- ----------part2-------- --> 
                 <div class="col-lg-1 col-md-1 col-sm-1"></div>
                 <div class="col-lg-7 col-md-7 col-sm-10" style="background: rgb(245, 245, 245);">
                     <div class="px-4 pt-5">
-                    <h3>TECHNICAL SPECIFICATIONS</h3><br>
+                    <h3><u><b>TECHNICAL SPECIFICATIONS</b></u></h3><br>
                     <div class="row">
                         <div class="part2 col-lg-5 col-md-5 col-sm-5">
+                            
                             <ul class="subspec">
                                 <li>Endurance</li>
                                 <li>Weight (payload included)</li>
                                 <li>Wingspan / Length: </li>
-                                <li>Material</li>
                                 <li>Deployment time </li>
                                 <li>Cruise speed:</li>
-                                <li>Field of View / Scanning width: </li>
-                                <li>Point density: </li>
-                                <li>Point cloud accuracy:</li>
-                                <li>Maximum distance covered:</li>
-                                <li>Maximum surface area covered:</li>
-                                <li>Communication range: </li>
-                                <li>OPERATING CONDITIONS:</li>
-                                <li>Weather:</li>
-                                <li>Take-off & Landing altitude / ceiling:</li>
-                                <li>Landing space:</li>
+                                <li>Take-off / Landing:</li>
+                                <li>Flying Range</li>
+                                <li>Maximum surface area covered</li><br><br>
                             </ul>
                         </div>
                         <div class="part2 col-lg-7 col-md-7 col-sm-7">
                             <ul class="subspec1">
-                                <li>Up to 110 minutes</li>
-                                <li>17 kg (37.5 pounds)</li>
-                                <li>3.3 m / 1.6 m (10.8 ft / 5.2 ft)</li>
-                                <li>Composite (fiberglass, carbon, Kevlar), EPP foam</li>
-                                <li>8 min Take-off / Landing Catapult / Belly (all terrain)</li>
-                                <li>57 km/h (31 mph)</li>
-                                <li>46° / 102 m @ 120 m AGL (334 ft @394 ft AGL)</li>
-                                <li>50 pts/m² @ 80 m AGL in a one-way flight</li>
-                                <li>up to 10 cm horizontal / 5 cm vertical with a single overlap @80 m</li>
-                                <li>110 km (68 miles)</li>
-                                <li>5.2 km² @ 80 m / 9.7 km² @ 120 m</li>
-                                <li>Up to 55 km / 34 miles(820 ft AGL)</li>
-                                <li>35 km/h (19 kt) wind, light rain, -15 to 40°C</li>
-                                <li>0 to 2000 m ASL @ 0° - Ceiling up to 2750 m</li>
-                                <li>Typically 15 m x 50 m(50 ft x 165 ft)</li>
+                                <li>Up to 52 minutes</li>
+                                <li>1.6 kg (3.52 lbs)</li>
+                                <li>1.1 m (43 in)</li>
+                                <li>5 min</li>
+                                <li>54 km/h (34 mph)</li>
+                                <li>Hand-launched (angle: 30 degrees)
+                                    / Belly landing (angle: 30 degrees)</li>
+                                <li>47 km (29 mi)</li>
+                                <li>(70% overlap,
+                                    results may vary depending on conditions) - 90 ha (230 ac)
+                                    mapped with 5 cm GSD at 75 m (246 ft) AGL - 150 ha (370 ac)
+                                    mapped with 8 cm GSD at 122 m (400 ft) AGL - 600 ha (1500 ac)
+                                    mapped with 34 cm GSD at 500 m (1,640 ft) AGL</li>
                             </ul>
                         </div>
                     </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
 
-        <!-- ----------part3-------- -->        
-        <div class="col-lg-12 col-md-12 col-sm-10 my-5" style="background: #F5F5F5;">
-            <div class="allmargins p-5">
-            <h2 style="font-size:25px; margin-left: 105px;color:#FE3514">Safety Systems</h2>
-            <p class="mt-5" style="margin-left: 105px; margin-right: 105px;">Dual link Automatic Dependent Surveillance - Broadcast (ADSB) transceiver</p>
-            <p style="margin-left: 105px; margin-right: 105px;">Assists with Detect and Avoid (DAA) functionality for Unmanned
-                Aircraft Systems (UAS) operations in the National Airspace System
-                (NAS)
-            </p>
-            <p  style="margin-left: 105px; margin-right: 105px;">Detects commercial aircraft threats on 1090MHz and 978MHz
-                within a 100 statute mile radius in real time. Transmits ADS-B on
-                978MHz (UAT) 20W nominal advanced automatic fail safe
-                modes, with emergency parachute. Flight termination system
-                developed following ED12-C/DO178-C DAL D aviation standard.
-                Safety analysis conducted according to recognized aerospace
-                guidelines ARP4754 and ARP4761.
-            </p>
-            <p  style="margin-left: 105px; margin-right: 105px;">Geocaging (fully configurable ceiling protection, geofencing,
-                forbidden zone protection) Real-time video navigation back-up
-                (looking down camera) Position and anti-collision strobe lights
-            </p>
+        <!-- --------communication range, operating conditions, sensors -->
+        <div class="container allmargins" style="background-color: #F5F5F5;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="px-4 pt-5">
+                        <h3><u><b>COMMUNICATION RANGE</b></u></h3><br>
+                        <div class="row">
+                            <div class="part2 col-lg-5 col-md-5 col-sm-5">
+                                <ul class="subspec">
+                                    <li>3G/4G</li>
+                                    <li>Delair Link (2.4 GHz radio)</li>
+                                </ul>                               
+                            </div>
+                            
+                            <div class="part2 col-lg-7 col-md-7 col-sm-7">
+                                <ul class="subspec1">
+                                    <li>Unlimited (within network coverage)</li>
+                                    <li>FCC up to 10 km (6.2 mi),<br> CE up to 5 km (3.1 mi)</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <h3><u><b>OPERATING CONDITIONS</b></u></h3><br>
+                            </div>
+
+                            <div class="part2 col-lg-5 col-md-5 col-sm-5">
+                                <ul class="subspec">
+                                    <li>Weather</li>
+                                    <li>Temperature</li>
+                                    <li>Maximum takeoff altitude</li>
+                                    <li>Landing accuracy </li>
+                                    <li>GNSS</li>
+                                </ul>
+                            </div>
+
+                            <div class="part2 col-lg-7 col-md-7 col-sm-7">
+                                <ul class="subspec1">
+                                    <li>45km/h(28 mph)wind resistance, moderate rain</li>
+                                    <li>-20 to 45 C (-4 to 110 F)</li>
+                                    <li>Takeoff at 3,600 m(11,800 ft)</li>
+                                    <li>~5 m (16 ft)</li>
+                                    <li>PPK optional (software activated),
+                                        L1/L2, GPS+GLONASS</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="px-4 pt-5">
+                        <h3><u><b>SENSORS</b></u></h3><br>
+                        <div class="row">
+                            <div class="part2 col-lg-6 col-md-6 col-sm-6">
+                                <ul class="subspec">
+                                    <li>Sensor type</li>
+                                    <li>Narrow & calibrated spectral bands</li>
+                                </ul>                               
+                            </div>
+                            
+                            <div class="part2 col-lg-6 col-md-6 col-sm-6">
+                                <ul class="subspec1">
+                                    <li>Global shutter, distortion free</li>
+                                    <li>Red,Green,Blue,Red Edge,Near Infrared</li>
+                                </ul>
+                            </div>
+
+                            <div class="part2 col-12">
+                                <ul class="subspec">
+                                    <li>Live picture preview on ground (RGB/NDVI)</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <h3><u><b>CERTIFICATION</b></u></h3><br>
+                            </div>
+
+                            <div class="part2 col-lg-5 col-md-5 col-sm-5">
+                                <ul class="subspec">
+                                    <li>DGCA certification</li>
+                                    <li>BVLOS</li>
+                                    <li>NPNT</li>
+                                    <li>ADSB-in/out</li>
+                                </ul>
+                            </div>
+
+                            <div class="part2 col-lg-7 col-md-7 col-sm-7">
+                                <ul class="subspec1">
+                                    <li>In process</li>
+                                    <li>Ready</li>
+                                    <li>Ready</li>
+                                    <li>Ready</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        
         
         <!-- -----product details ends--- -->
         
