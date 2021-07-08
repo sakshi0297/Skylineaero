@@ -473,6 +473,7 @@ hr {
   right: -30px;
 }
 
+
 /* line 216, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
 .owl-carousel .owl-nav div.owl-next i {
   position: relative;
@@ -3294,7 +3295,7 @@ hr {
 
 /* line 30, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
 .header-area .header-top {
-  background-color: black;
+  background-color: #386379;
   padding: 0px 0px;
 }
 
@@ -3695,7 +3696,7 @@ hr {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgb(0, 12, 12)), url(../img/hero/h1_hero.jpg);
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgb(0, 12, 12)), url(../img/gallery/carousel/part1.jpg);
 }
 
 /* line 44, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
@@ -4311,6 +4312,14 @@ hr {
   letter-spacing: 1px;
 }
 
+.wave{
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.wantToWork-area{
+  background-color: #fff;
+}
 /* line 13, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_wantTowork.scss */
 .wantToWork-area .wantToWork-caption h2 {
   font-size: 35px;
@@ -4945,6 +4954,7 @@ hr {
   transition: 0.2s;
 }
 
+
 /* line 56, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_services_section.scss */
 .categories-area .single-cat:hover .cat-cap h5 {
   color: #000;
@@ -4953,7 +4963,7 @@ hr {
 /* line 66, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_services_section.scss */
 .service-area {
   padding-top: 260px;
-  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.3), rgb(12, 1, 4)), url(../img/hero/h1_hero.jpg);
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgb(0, 12, 12)), url(../img/gallery/carousel/part1.jpg);
 }
 
 @media (max-width: 575px) {
@@ -5242,7 +5252,7 @@ hr {
 
 /* line 1, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area {
-background-color: rgb(241, 241, 241);
+background-color: #386379;
 /* opacity: 0.8; */
 }
 
@@ -5269,9 +5279,10 @@ background-color: rgb(241, 241, 241);
 
 /* line 22, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle h4 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 29px;
   font-weight: 700;
+  color:#fff;
 }
 
 /* line 29, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
@@ -5281,7 +5292,7 @@ background-color: rgb(241, 241, 241);
 
 /* line 31, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle ul li a {
-  color: rgb(109, 109, 109);
+  color: #c9c9c9;
   font-size: 15px;
   font-weight: 300;
 }
@@ -5294,7 +5305,7 @@ background-color: rgb(241, 241, 241);
 
 /* line 42, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle p {
-  color: rgb(109, 109, 109);
+  color: #c9c9c9;
 }
 
 /* line 46, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
@@ -5317,6 +5328,7 @@ background-color: rgb(241, 241, 241);
   color: #C2C5DB;
   border-radius: 0px;
 }
+
 .industries h2{
   font-weight: bold;
 }
@@ -5340,7 +5352,7 @@ background-color: rgb(241, 241, 241);
 
 /* line 80, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-bottom-area {
-  background-color: #000000;
+  background-color: black;
 }
 
 /* line 82, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
@@ -5431,7 +5443,7 @@ background-color: rgb(241, 241, 241);
 }
 
 .single-footer-caption .footer-number p{
-  color: #191d34;
+  color: #fff;
   font-weight: bold;
   
 }
@@ -6257,7 +6269,7 @@ background-color: rgb(241, 241, 241);
 
 /* line 770, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */
 .blog_right_sidebar .search_widget .form-control::placeholder {
-  color: #999999;
+  color: #020202;
 }
 
 /* line 774, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */

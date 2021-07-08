@@ -41,7 +41,7 @@
     <header>
         <!-- Header Start -->
         <div class="header-area">
-            <div class="main-header ">
+            <div class="main-header">
                 <div class="header-top d-none d-lg-block">
                     <div class="container">
                         <div class="col-xl-12">
@@ -60,12 +60,12 @@
                     </div>
                 </div>
                 <div class="header-bottom header-sticky">
-                    <div class="container">
+                    <div class="container-fluid p-0" style="overflow-x: hidden; overflow-y: hidden;">
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="100%"></a>
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="60%" class="ml-100"></a>
                                 </div>
                             </div>
                             <div class="col-xl-9 col-lg-8">
@@ -75,10 +75,24 @@
                                         <nav> 
                                             <ul id="navigation">                                                                                          
                                                 <li class="active"><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="project.html">Project</a></li>
-                                                <li><a href="blog.html">Blog</a>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Products
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
+                                                      <a class="dropdown-item" href="product1.html">UF-15-LIDAR</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">UF-2-AG-MAP</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">Tethered Station & drones</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">USV-ORCA-1</a>
+                                                    </div>
+                                                  </li>                                 
+                                                <li><a href="">Contact</a></li>
+                                                <!-- <li><a href="blog.html">Blog</a>
                                                     <ul class="submenu">
                                                         <li><a href="blog.html">Blog</a></li>
                                                         <li><a href="blog_details.html">Blog Details</a></li>
@@ -91,8 +105,8 @@
                                                         <li><a href="services_details.html">Services Details</a></li>
                                                         <li><a href="elements.html">Element</a></li>
                                                     </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                </li> -->
+                                                
                                             </ul>
                                         </nav>
                                     </div>
@@ -116,24 +130,7 @@
                             </div>
                             
                         </div>
-                        <!-- ------product-menu -->
                         
-                        <div class="col-lg-12">
-                            <div class="menu-wrapper d-flex align-items-center">
-                                <!-- Main-menu -->
-                                <div class="product-menu d-none d-lg-block" style="margin-left: 40%;">
-                                    <nav> 
-                                        <ul
-                                        id="navigation" >                                                                       
-                                            <li class="active"><a href="product1.html">UF-15-LIDAR</a></li>
-                                            <li><a href="#">UF-2-AG-MAP</a></li>
-                                            <li><a href="#">Tethered Station & drones</a></li>
-                                            <li><a href="#">USV-ORCA-1</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
@@ -145,7 +142,7 @@
     </header>
     <main>
 
-        <div class="allmargins container-fluid mt-5">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="container">
@@ -159,41 +156,44 @@
                     </div>
                 </div> 
                 <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-                    <img src="assets/img/gallery/bg1.jpg" width="100%" height="100%">
+                    <img src="assets/img/gallery/bg1.jpg" width="80%" height="80%">
                 </div> 
             </div>
         </div>
 
+    
+
         <!-- Services Area start -->
                 <!-- Want To work -->
-        <section class="allmargins wantToWork-area" style="background-color: rgb(245, 245, 245);">
+                
+        <section class=" wantToWork-area" style="background-color: #386379;">
+            <img src="assets/img/gallery/wave1.png" class="wave" style="width: 100%;">
             <div class="container">
                 <div class="wants-wrapper">
                     <div class="row">
                         <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
-                            <ul>
-                                <li style="color:#f73214">Fly farther and longer</li>
-                                <li style="font-size: medium;">Long-range and high-endurance</li>
-                            </ul><br>
+                            
+                                <p style="color:rgb(255, 145, 71); font-size: 30px;">Fly farther and longer</p>
+                                <p style="color:rgb(255, 145, 71);">Long-range and high-endurance</p>
+                            <br>
                             <ul class="subspec">
-                                <li>Up to 20 km communications range over radio</li>
-                                <li>Unlimited communications range over 3G (in network)</li>
-                                <li>Up to 110 minutes flight time</li>
-                                <li>BVLOS-ready</li>
-                                <li>Cover up to 2,400 acres (9.7 km2) in a single flight at 120 m flight height</li>
+                                <li style="color:white;">Up to 20 km communications range over radio</li>
+                                <li style="color:white;">Unlimited communications range over 3G (in network)</li>
+                                <li style="color:white;">Up to 110 minutes flight time</li>
+                                <li style="color:white;">BVLOS-ready</li>
+                                <li style="color:white;">Cover up to 2,400 acres (9.7 km2) in a single flight at 120 m flight height</li>
                             </ul>
                         </div>
                         
                             <div class="specification col-xl-6 col-lg-6 col-md-6 p-5">
-                                <ul>
-                                    <li>HD Camera Specifications</li>
-                                </ul><br>
+                                <p style="color:rgb(255, 145, 71); font-size: 25px;">HD Camera Specifications</p>
+                                <p style="color:rgb(255, 145, 71)">Long-range and high-endurance</p><br>
                                 <ul class="subspec">
-                                    <li>True global shutter</li>
-                                    <li>Real-time camera to GCS link for on-the-fly quality control</li>
-                                    <li>Fully-integrated industrial camera</li>
-                                    <li>Up to 1 cm GSD imagery</li>
-                                    <li>Image resolution is 21.4 MP</li>
+                                    <li style="color:white">True global shutter</li>
+                                    <li style="color:white">Real-time camera to GCS link for on-the-fly quality control</li>
+                                    <li style="color:white">Fully-integrated industrial camera</li>
+                                    <li style="color:white">Up to 1 cm GSD imagery</li>
+                                    <li style="color:white">Image resolution is 21.4 MP</li>
                                 </ul>
                             </div>
                         </div><br>
@@ -203,12 +203,13 @@
                     </div>
                 </div>
             </div>
+            <img src="assets/img/gallery/wave1.png" style="width: 100%;">
         </section>
         <!-- Want To work End -->
 
         <!-- -----product details--- -->
 
-        <div class="container">
+        <div class="container allmargins">
             <div class="row">
 <!-- ----part 1----- -->
                 <div class="part1 col-lg-4 col-md-4 col-sm-10" style="background: #F5F5F5">
@@ -296,6 +297,7 @@
 
         <!-- ----------part3-------- -->        
         <div class="col-lg-12 col-md-12 col-sm-10 my-5" style="background: #F5F5F5;">
+            
             <div class="allmargins p-5">
             <h2 style="font-size:25px; margin-left: 105px;color:#FE3514">Safety Systems</h2>
             <p class="mt-5" style="margin-left: 105px; margin-right: 105px;">Dual link Automatic Dependent Surveillance - Broadcast (ADSB) transceiver</p>
