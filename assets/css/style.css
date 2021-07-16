@@ -257,9 +257,6 @@ p {
 }
 
 /* line 53, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
-.f-right {
-  float: right;
-}
 
 /* line 56, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
 .fix {
@@ -5288,6 +5285,7 @@ background-color: #386379;
 /* line 29, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
 .footer-area .footer-tittle ul li {
   margin-bottom: 15px;
+  /* margin-left: 5px; */
 }
 
 /* line 31, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
@@ -5326,7 +5324,7 @@ background-color: #386379;
   border: 1px solid #C2C5DB;
   background: no-repeat;
   color: #C2C5DB;
-  border-radius: 0px;
+  border-radius: 30px;
 }
 
 .industries h2{
@@ -5336,13 +5334,14 @@ background-color: #386379;
 .footer-area .footer-form form .form-icon button {
   border: 0;
   cursor: pointer;
-  padding: 15px 22px;
+  padding: 12px 20px;
   background: #FF3514;
+  
   line-height: 1;
-  width: 100%;
+  width: 50%;
   display: block;
   margin-top: 13px;
-  border-radius: 0;
+  border-radius: 30px;
 }
 
 /* line 74, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_footer.scss */
@@ -6939,6 +6938,7 @@ background-color: #386379;
   background: transparent;
 }
 
+
 /* line 1545, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */
 .comment-form .form-control:focus {
   outline: 0;
@@ -6948,12 +6948,12 @@ background-color: #386379;
 /* line 1550, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */
 .comment-form .form-control::placeholder {
   font-weight: 300;
-  color: #999999;
+  color: #fff;
 }
 
 /* line 1555, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */
 .comment-form .form-control::placeholder {
-  color: #777777;
+  color: #fff;
 }
 
 /* line 1560, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_blog_page.scss */
