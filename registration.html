@@ -151,10 +151,10 @@
     </header>
 
   
-    <main>
+    <main style="background-color: #F7F7F7">
 
          <!-- <h1 class="blink"><a href="" style="color: #ff3500;">India's First Nano Drone</a></h1> -->
-         <div class="container px-5">
+         <div class="container">
             <div class="row">
 
                 <div class="col-lg-6 col-md-6 col-sm-6 py-5 mt-5">
@@ -194,10 +194,11 @@
                 
             </div>
         </div>
+        
         <center><h1>CREATE AN ACCOUNT</h1></center><center><span class="arrow down my-5">Down</span></center>
 
 
-        <section class="details p-100" style="margin-top: 0px; padding: 100px; margin-right: 200px; margin-left: 200px; border: 1px; border-style: solid; border-color: white; box-shadow: 1px 5px 5px 8px #e8e7e7; background-color:#F7F7F7">
+        <section class="details p-100" style="margin-top: 0px; padding: 100px; margin-right: 200px; margin-left: 200px; border: 1px; border-style: solid; border-color: white; box-shadow: 1px 5px 5px 8px #e8e7e7; background-color: #fff;">
             <!-- <img src="assets/img/gallery/wave1.png" class="wave" style="width: 100%;"> -->
             <div class="registration">
                 <div class="container">
@@ -232,14 +233,28 @@
 
                                 <div class="row">
 
-                                    <div class="col-lg-6 col-md-6 col-sm-6 pr-100">
-                                        <center><div class="square m-5" style="border: 1px; border-style: solid; border-color: white; box-shadow: 0px 1px 5px 5px #e8e7e7;"><center><p class="pt-60">Pilot Photo</p></center></div></center>
-                                       
+                                    <div class="col-lg-6 col-md-6 col-sm-6 pr-100 pb-100">
+                                        <center>
+                                           
+                                                <img src="http://placehold.it/180" id="blah" alt="Img" style="border: 1px; border-style: solid; border-color: white; box-shadow: 0px 1px 5px 5px #e8e7e7;">
+                                                
+                                                <div class="mt-1">Pilot Photo</div><br><br>
+
+                                                <input type="file" onchange="uploadImg(this)" class="ml-80" style="font-size: small;">
+                                            
+                                        </center>
                                     </div>
                                     
                                    <div class="col-lg-6 col-md-6 col-sm-6 pr-100">
-                                    <center><div class="square m-5" style="border: 1px; border-style: solid; border-color: white; box-shadow: 0px 1px 5px 5px #e8e7e7;"><center><p class="pt-50">Drone owner photo or company logo</p></center></div></center>
-                                    </div>
+                                    <center>
+                                           
+                                            <img src="http://placehold.it/180" id="bluh" alt="Img" style="border: 1px; border-style: solid; border-color: white; box-shadow: 0px 1px 5px 5px #e8e7e7;">
+                                            
+                                            <div class="mt-1">Drone owner photo /<br> company logo</div><br>
+
+                                            <input type="file" onchange="uploadImg1(this)" class="ml-80" style="font-size: small;">
+                                        
+                                    </center>
 
                                 </div><br><br>
 
@@ -410,6 +425,36 @@
     </div>
 
     <!-- JS here -->
+
+    <script>
+        var a = document.getElementById("blah");
+        a.style.width = "180px"
+        a.style.height = "180px"
+        function uploadImg(anyImg){
+            if(anyImg.files){
+                var reader = new FileReader();
+                reader.readAsDataURL(anyImg.files[0]);
+
+                reader.onload=(e)=>{
+                    a.src = e.target.result;
+                }
+            }
+        }
+
+        var b = document.getElementById("bluh");
+        b.style.width = "180px"
+        b.style.height = "180px"
+        function uploadImg1(anyImg1){
+            if(anyImg1.files){
+                var reader1 = new FileReader();
+                reader1.readAsDataURL(anyImg1.files[0]);
+
+                reader1.onload=(f)=>{
+                    b.src = f.target.result;
+                }
+            }
+        }
+    </script>
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

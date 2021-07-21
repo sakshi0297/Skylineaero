@@ -3728,7 +3728,20 @@ hr {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgb(0, 12, 12)), url(../img/drone_images/header.jpg);
+  /*background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgb(0, 12, 12)), url(../img/drone_images/header.jpg);*/
+}
+
+.single-slider-1{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part6.jpg);
+  background-size: cover;
+}
+.single-slider-2{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part8.jpg);
+  background-size: cover;
+}
+.single-slider-3{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part9.jpg);
+  background-size: cover;
 }
 
 /* line 44, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
@@ -4763,7 +4776,7 @@ hr {
 }
 
 /* line 234, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-.man-slider-active button.slick-arrow {
+.man-slider-active button.slick-arrow, .three-product-slider-active button.slick-arrow {
   position: absolute;
   right: 50px;
   bottom: -1px;
@@ -4781,7 +4794,7 @@ hr {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 234, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-  .man-slider-active button.slick-arrow {
+  .man-slider-active button.slick-arrow, .three-product-slider-active button.slick-arrow {
     line-height: 40px;
     height: 40px;
     width: 40px;
@@ -4791,7 +4804,7 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 234, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-  .man-slider-active button.slick-arrow {
+  .man-slider-active button.slick-arrow, .three-product-slider-active button.slick-arrow{
     line-height: 40px;
     height: 40px;
     width: 40px;
@@ -4801,7 +4814,7 @@ hr {
 
 @media (max-width: 575px) {
   /* line 234, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-  .man-slider-active button.slick-arrow {
+  .man-slider-active button.slick-arrow, .three-product-slider-active button.slick-arrow  {
     line-height: 40px;
     height: 40px;
     width: 40px;
@@ -4810,19 +4823,19 @@ hr {
 }
 
 /* line 267, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-.man-slider-active button.slick-arrow i {
+.man-slider-active button.slick-arrow i, .three-product-slider-active button.slick-arrow i {
   font-size: 20px;
   color: #FF3514;
 }
 
 /* line 282, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-.man-slider-active button.slick-next {
+.man-slider-active button.slick-next, .three-product-slider-active button.slick-next {
   right: 0px;
   background: #FF3514;
 }
 
 /* line 286, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
-.man-slider-active button.slick-next i {
+.man-slider-active button.slick-next i, .three-product-slider-active button.slick-next i {
   color: #fff;
 }
 

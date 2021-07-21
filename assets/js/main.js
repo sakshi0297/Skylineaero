@@ -58,7 +58,7 @@
         doAnimations($animatingElements);
       });
       BasicSlider.slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         dots: false,
         fade: true,
@@ -258,7 +258,52 @@ var testimonial = $('.h1-testimonial-active');
   ]
 });
 
-
+ // Three Product Images slder
+ $('.three-product-slider-active').slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  speed: 400,
+  arrows: true,
+  prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+  ]
+});
 
 /* 7. data-background */
     $("[data-background]").each(function () {
