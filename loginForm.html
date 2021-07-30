@@ -34,21 +34,8 @@
         font-family: 'Josefin Sans', sans-serif;
     }
 
-    .main_div{
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-
-    .box{
-        width: 900px;
-        padding-left:80px;
-        padding-right: 80px;
-        border-radius: 10px;
-    }
-
-    .box .inputBox{
-        position: relative;
+    .box ::placeholder{
+        text-align: center;
     }
 
     .box .inputBox input{
@@ -56,55 +43,32 @@
         padding: 10px;
         font-size: 14px;
         color: #000000;;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-        border:none;
-        border-bottom: 1px solid #000000;;
-        background: transparent;
+        border: 3px solid #000000;
+        border-radius: 15px;
+        background: white;
         outline: none;
-        /* margin-top: 20px; */
     }
 
     .box .inputBox label{
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* letter-spacing: 1px; */
-        padding: 10px 0;
-        font-size: 16px;
+        font-size: 18px;
         color: #000000;
         font-weight: bold;
-
     }
-
-    /* .box .inputBox input:focus ~ label,
-    .box .inputBox input:valid ~ label{
-        top:-20px;
-        left:0px;
-        color: orangered;
-        font-size: 14px;
-    } */
 
     .box input[type="submit"]{
         background: transparent;
         border: none;
         outline: none;
         color: #000000;
-        background: #03a9f4;
         padding: 8px 16px;
         border-radius: 5px;
         font-size: 14px;
     }
-
-    .btn-blackbtn{
-        background-color: lightgray;
-        color: gray;
-    }
-
             
     </style>
 </head>
-<body style="background-color: #F7F7F7;">
+
+<body style="background-color: #E0E2F4;">
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -207,94 +171,68 @@
   
     <main>
 
-        <!-- <center><h1>CREATE AN ACCOUNT</h1></center><center><span class="arrow down my-5">Down</span></center><br><br> -->
+        <div class="container-fluid">
 
-        <div class="container mt-5" style="border: 20px solid lightgray; padding: 10px;">
+            <div class="row">
 
-            <center>
-                <div class="col-xl-3 col-lg-3 col-md-3 mt-5">
-                    <div class="wantToWork-caption wantToWork-caption2">
-                        <div class="logo">
-                            <img src="assets/img/logo/logo.png" alt="" width="100%">
-                        </div>
-                    </div>
+                <div class="col-md-4" style="background-color: #B7A4EF;">
+                    <div style="margin-left: 80px; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+                        <center><label style="font-weight: bold; font-size: 18px;">Welcome to Skylink Aero LLP family.<br><br> Thakyou for choosing us!</label></center>
+                    </div>    
                 </div>
-                </center>
 
+                <div class="col-md-8 px-0">
 
-            <u><section class="pt-40 px-50 mx-5 text-center" style="color:black;font-size: 18px;font-size: 20px; font-weight: bold;">Crashed or Lost of Drone</section></u> 
-            <section class="px-50 mx-5  text-center" style="color:black;font-size: 18px;">We are sorry to hear that</section><br><br>
-            
-            
-            <center><div class="box">    
-                
-                <form method="" action="" >
-   
-                    <div class="row">
-                        <div class="col-md-6 inputBox">
-                            <label> Did you crashed the Drone </label>
-                        </div>
+                    <div class="box">
 
-                        <div class="col-md-6 mb-5">  
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <span><input type="radio" name="crash" required>Yes</span>
-                                </div>
-                                <div class="col-md-6">
-                                    <span><input type="radio" name="crash" required>No</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                        <form method="" action="" >
 
-                    <div class="row">
-                        <div class="col-md-6 inputBox">
-                            <label> Did you lost the Drone </label>
-                        </div>
+                            <div class="container py-5" style="padding-right: 200px; padding-left: 200px;">
 
-                        <div class="col-md-6">  
-                            <div class="row">
-                                <div class="col-md-6 mb-5">
-                                    <span><input type="radio" name="crash" required>Yes</span>
-                                </div>
-                                <div class="col-md-6">
-                                    <span><input type="radio" name="crash" required>No</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <section class="ml-4" style="color:black;font-size: 18px; font-size: 20px; font-weight: bold;">Login to Skylink Drone Owner Account</section>
+                                <section class="ml-4" style="color:black;font-size: 13px;">Enter your login details below</section><br>  
+                                
+                                <div class="inputBox">
+                                    
+                                            <label class="ml-4"> EMAIL ADDRESS</label>                          
+                                            <input type="email" placeholder="yourmail@xyz.com">
 
-                    <div class="inputBox">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label> If crashed upload the image of crashed drone </label>
-                            </div>
-                            <div class="col-md-6">  
-                                <input type="file" class="ml-60" style="font-size: small;border-bottom:none;">
-                            </div>
-                        </div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <label class="ml-4 mt-5"> PASSWORD </label>         
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <label class="mt-5" style="font-size: small; border-bottom: 2px solid #ff3500; font-weight: bold;"><a href="#" style="font-size: small;color:#ff3500">FORGOT YOUR PASSWORD?</a></label>
+                                                </div>
+                                            </div>
+
+                                                            
+                                            <input type="password" placeholder="ENTER YOUR PASSWORD">
+                                
+                                </div> 
+
+                                <span style="font-size: 14px; font-weight: 600;"><input type="checkbox" class="ml-4 mt-5" name="remember" required> Remember me</span><br>
+                                
+                                <center><button class="btn-blackbtn py-2 px-5 text-white mt-5" id="submit" style="border-radius: 7px; border:none; background-color: black; font-weight: bold;">SIGN IN</button></center>
+
+                            </div>    
+                        
+                        </form>
+
                     </div> 
 
-                    <div class="inputBox">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <label> Describe the Reason </label>
-                            </div>
-                            <div class="col-md-5">  
-                                <textarea id="textarea" name="textarea" rows="4" cols="50" style="border: 3px solid #000000;"></textarea>
-                            </div>
-                        </div>
-                    </div> <br><br>
-                      
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <center><button class="btn-blackbtn px-5 py-2 text-white" id="submit" style="border-radius: 5px; background-color: black;">Submit</button></center>
-                    </div><br><br>
-                </form>
+                    <section style=" background-color: lightgray;">
 
+                        <span style="font-size: small; font-weight: 600;">*Having trouble to login to your account, we are heare to help you click on the given link. or Contact us on <span style="font-weight: bold;">“info@skylinkaero.com”&nbsp;&nbsp;&nbsp;   <label class="mt-5" style="font-size: 12px; border-bottom: 2px solid #ff3500; font-weight: bold;"><a href="#" style="font-size: small;color:#ff3500"> CLICK HERE</a></label></span>    <br>
+                            *This account is only for the Skylink Aero Drone Owner for there Services and exclusive Offers<br>
+                            *You will Recive your Login Id and passward on your Registered Email Id and number after Purchasing a drone 
+                        </span>
+
+                    </section>
                 
-            </div></center>
+                </div>
 
+            </div>
 
         </div>
 
@@ -303,7 +241,7 @@
     <footer>
         <!-- Footer Start-->
 
-        <div class="footer-area mt-5">
+        <div class="footer-area">
             <div class="container pt-50">
                 <div class="row d-flex justify-content-between">
 
@@ -388,6 +326,7 @@
                                                 </div>
                                                 <!-- <div class="mt-10 info"></div> -->
                                             </form>
+                                           
                                         </div>
                                     </div>
 
