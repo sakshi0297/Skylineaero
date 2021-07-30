@@ -60,7 +60,7 @@
       BasicSlider.slick({
         autoplay: true,
         autoplaySpeed: 4000,
-        dots: false,
+        dots: true,
         fade: true,
         arrows: false, 
         prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
@@ -210,7 +210,6 @@ var testimonial = $('.h1-testimonial-active');
 });
 
 
-
  // Single Img slder
  $('.man-slider-active').slick({
   dots: false,
@@ -263,6 +262,8 @@ var testimonial = $('.h1-testimonial-active');
   dots: false,
   infinite: true,
   autoplay: true,
+  centerMode: true,
+  // centerPadding: '10px',
   speed: 400,
   arrows: true,
   prevArrow: '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
@@ -275,6 +276,7 @@ var testimonial = $('.h1-testimonial-active');
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
+        // centerMode: true,
         infinite: true,
         dots: false,
       }
@@ -284,6 +286,7 @@ var testimonial = $('.h1-testimonial-active');
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
+        // centerMode: true,
         infinite: true,
         dots: false,
       }

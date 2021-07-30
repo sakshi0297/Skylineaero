@@ -1,0 +1,820 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skylinkaero</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* input{
+            border: none;
+            width: 100%;
+            font-style: oblique;
+            background-color: transparent;
+            color:tomato;
+            font-weight: bold;
+        }
+        ::placeholder {
+            color: #386379;
+        }
+        hr{
+            width: 80%;
+        }
+        .square {
+        height: 150px;
+        width: 150px;
+        border: 1px solid white;
+        background-color: transparent;
+        } */
+
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .main_div{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .box{
+        width: 900px;
+        padding-left:80px;
+        padding-right: 80px;
+        border-radius: 10px;
+    }
+
+    .box .inputBox{
+        position: relative;
+    }
+
+    .box .inputBox input{
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        color: #000000;;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        border:none;
+        border-bottom: 1px solid #000000;;
+        background: transparent;
+        outline: none;
+        /* margin-top: 20px; */
+    }
+
+    .box .inputBox label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* letter-spacing: 1px; */
+        padding: 10px 0;
+        font-size: 16px;
+        transition: 0.5s;
+        color: #000000;
+        font-weight: bold;
+
+    }
+
+    /* .box .inputBox input:focus ~ label,
+    .box .inputBox input:valid ~ label{
+        top:-20px;
+        left:0px;
+        color: orangered;
+        font-size: 14px;
+    } */
+
+    .box input[type="submit"]{
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #000000;
+        background: #03a9f4;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .btn-blackbtn{
+        background-color: lightgray;
+        color: gray;
+    }
+    /* .gallery {
+    background: #EEE;
+    }
+
+    .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    }
+
+    /* cell number */
+    /* .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white; 
+    }*/
+    
+
+        .slick-slider {
+        width: 100%;
+        background-color: transparent;
+        }
+        .slick-track {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: 100px;
+            justify-content: center;
+        }
+        .slick-slide{
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 10px 0px;
+            margin: 10px;
+            background-color: white;
+            transition: all 0.3s ease;
+            height: auto;
+            text-align: center;
+        }
+            .slick-current,
+            .slick-center {
+                
+                /* background:linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117)); */
+            padding: 30px 0px;
+        
+        }
+
+        .slick-prev,
+        .slick-next {
+        z-index:10;  
+        top: 0px;
+        background-color: transparent;
+        }
+        .slick-prev {
+        left: 10px;
+        }
+        .slick-next {
+        right: 10px;
+        }
+    </style>
+</head>
+
+
+<body style="background-color: #F7F7F7;">
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                    <div class="preloader-img pere-text">
+                        <img src="assets/img/logo/loder.jpg" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+
+                <div class="header-top d-none d-lg-block">
+                    <div class="container">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>     
+                                        <li><i class="fas fa-phone"></i> +880 278 367 367</li>
+                                        <li><i class="far fa-envelope"></i>support@gmail.com</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <a href="#" class="btn">Free Quote <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom header-sticky" style="background-color:#fff">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="60%" class="ml-100"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-8">
+                                <div class="menu-wrapper  d-flex align-items-center">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav> 
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active"><a href="index.html">Home</a></li>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Products
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">    
+                                                      <a class="dropdown-item" href="product1.html">UF-15-LIDAR</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="product2.html">UF-2-AG-MAP</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="product3.html">Tethered Station & drones</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="product4.html">USV-ORCA-1</a>
+                                                    </div>
+                                                  </li>       
+                                                <li><a href="">Partners</a></li>                             
+                                                <li><a href="">Contact</a></li>
+                                                <li class="blink"><a href="hotdeals.html" style="color: #ff3500;">Hot Deals</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-1 col-lg-2">
+                                <!-- Search Box -->
+                                <!-- <div class="search d-none d-lg-block">
+                                    <ul>
+                                        <li>
+                                            <div class="nav-search search-switch">
+                                                <span class="fas fa-search"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header End -->
+    </header>
+  
+    <main>
+
+        <div class="container mt-5" style="border: 1px solid; border-color: transparent; padding: 10px;
+        box-shadow: 5px 10px 8px 10px #888888;">
+
+            <center>
+                <div class="col-xl-3 col-lg-3 col-md-3 mt-5">
+                    <div class="wantToWork-caption wantToWork-caption2">
+                        <div class="logo">
+                            <img src="assets/img/logo/logo.png" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </center>
+
+            <h2 class="pt-40 px-50 mx-5 text-center" style="color:black;font-size: 18px;">We at Skylink Aero LLP, truely appreciate your business, and we're so grateful for the trust you've placed in us.<br> We sincerely hope you are satisfied with your purchase. </h2><br><br>
+            <center><div class="box">
+
+                <div class="contact-form testimonial-area mb-40">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-lg-12 col-md-12">
+                                <!-- slider -->
+                                <div class="three-product-slider">
+                                    <div class="three-product-slider-active">
+                                        <div class="single-mam-img">
+                                            <img src="assets/img/gallery/man1.jpg" alt="">
+                                        </div>
+                                        <div class="single-mam-img">
+                                            <img src="assets/img/gallery/man2.jpg" alt="">
+                                        </div>
+                                        <div class="single-mam-img">
+                                            <img src="assets/img/gallery/man3.jpg" alt="">
+                                        </div>
+                                        <div class="single-mam-img">
+                                            <img src="assets/img/gallery/man4.jpg" alt="">
+                                        </div>
+                                        <div class="single-mam-img">
+                                            <img src="assets/img/gallery/man6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                
+                <form method="" action="" >
+
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Unique Identification Number UIN  </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="UIN" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Serial Number </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="SNo" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Model Name </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="ModelName" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> All up weight </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="weight" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Date of manufacturing </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="date" name="firstDate" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Last date of warranty </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="date" name="lastDate" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Company / Drone owner Name </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="drone" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Company/Drone Owner Email </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="email" name="email" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Drone Category </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="category" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Permission of flight altitude from AGL </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="permission" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> NPNT </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="NPNT" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Pilot License number </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="Lno" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Pilot Name </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="text" name="Pname" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label> Pilot Email </label>
+                            </div>
+                            <div class="col-md-6">  
+                                <input type="email" name="Pemail" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+                                                
+
+                    <!-- <input type="submit" name="" value="login"><br> -->
+                </form>
+
+                
+            </div></center>
+
+            <div class="container mt-5">
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 pr-100 pb-5 mx-5 mt-5">
+                        <center>
+                        
+                                <img src="http://placehold.it/180" id="blah" alt="Img" style="border:1px solid; border-color: black; box-shadow: 10px 10px 5px #aaaaaa;">
+                                
+                                <div class="mt-3" style="color: #386379; ">Drone owner</div><br>
+
+                                <input type="file" onchange="uploadImg(this)" class="ml-60" style="font-size: small;">
+                            
+                        </center>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-4 pr-100 mx-5 mt-5">
+                        <center>
+                            
+                                <img src="http://placehold.it/180" id="bluh" alt="Img" style="border:1px solid; border-color: black; box-shadow: 10px 10px 5px #aaaaaa;">
+                                
+                                <div class="mt-3" style="color: #386379;">Pilot</div><br>
+
+                                <input type="file" onchange="uploadImg1(this)" class="ml-60" style="font-size: small;">
+                            
+                        </center>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2"></div><br>
+
+                    <div class="container px-5 mx-5">
+
+                        <div class="row mb-100">
+        
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <center><button class="btn-blackbtn p-3 text-white" id="create" style="border-radius: 5px; background-color: black;">Maintenance / Repair</button></center>
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <center><button class="btn-blackbtn p-3" id="create" disabled="disabled" style="border-radius: 5px;">Crashed / Lost</button></center>
+                                </div>
+        
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <center><button class="btn-blackbtn p-3" id="create" disabled="disabled" style="border-radius: 5px;">Want to Buy Spare Parts</button></center>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <center><button class="btn-blackbtn p-3" id="create" disabled="disabled" style="border-radius: 5px;">Resell Your Drone</button></center>
+                                </div>
+        
+                        </div>
+        
+                    </div>  
+
+                </div>
+    
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Footer Start-->
+
+        <div class="footer-area mt-5">
+            <div class="container pt-50">
+                <div class="row d-flex justify-content-between">
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 pl-0">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle mb-50">
+                                <h4>About Us</h4>
+                                <p style="font-size: 15px;" class="text-justify">The “Skylink Aero LLP.” is renowned for its 
+                                    expertise in robotics, automated systems, 
+                                    simulation and industrial processes.<br> We are 
+                                    developing complete innovative technological 
+                                    solutions to perform complex missions in hostile.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                        <div class="single-footer-caption mb-50">     
+                            <div class="footer-tittle" id="companyfooter">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Home</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">About</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Services</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Products</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">FAQ</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Terms & Conditions</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Privacy Policy</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Aviation Rules</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Blogs</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">News</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Download</a></li>
+                                    <li><img src="bullet2.jpg" width="15px" height="15px" style="border-radius: 50%; margin-right: 5px;"><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Contact Us</h4>
+                                
+                                <div class="footer-pera">
+                                    
+                                    <p class="info1"><span class="text-white"> Address : </span> Office No - 3, Vighnaharta Heritage, Ambegaon Pathar,                   Pune, Maharashtra, India<br>
+                                        Postcode: - 411046.<br><span class="text-white"> info@skylinkaero.com</span></p> 
+                                    
+                                        
+                                            <!-- Footer Social -->
+                                            <div class="footer-social">
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fas fa-globe"></i></a>
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        
+
+                                    <div class="footer-form">
+                                        <div id="mc_embed_signup">
+                                            <!-- Form -->
+                                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+
+                                                <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" >
+                                                <div class="form-icon">
+                                                    <center><button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+                                                        Subscribe
+                                                    </button></center>
+                                                    <!-- <div class="logo">
+                                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="60%" class="ml-50 pt-3"></a>
+                                                    </div> -->
+                                                </div>
+                                                <!-- <div class="mt-10 info"></div> -->
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                               
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right">
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                <p>Copyright ©2020 All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true"></i>  by <a href="https://colorlib.com/" target="_blank">Stacklab.in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+    <!--? Search model Begin -->
+    <div class="search-model-box">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-btn">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Searching key.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script>
+        var a = document.getElementById("blah");
+        a.style.width = "180px"
+        a.style.height = "180px"
+        function uploadImg(anyImg){
+            if(anyImg.files){
+                var reader = new FileReader();
+                reader.readAsDataURL(anyImg.files[0]);
+
+                reader.onload=(e)=>{
+                    a.src = e.target.result;
+                }
+            }
+        }
+
+        var b = document.getElementById("bluh");
+        b.style.width = "180px"
+        b.style.height = "180px"
+        function uploadImg1(anyImg1){
+            if(anyImg1.files){
+                var reader1 = new FileReader();
+                reader1.readAsDataURL(anyImg1.files[0]);
+
+                reader1.onload=(f)=>{
+                    b.src = f.target.result;
+                }
+            }
+        }
+    </script>
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+    <script>
+        $('.slick-slider').slick({
+            centerMode: true,
+            slidesToShow: 5,
+            dots: true,
+            arrows: true,
+            swipe: true,
+            //  infinite: true,
+            swipeToSlide: true,
+            //adaptiveHeight: true,
+        });
+
+    </script>
+    
+    </body>
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
