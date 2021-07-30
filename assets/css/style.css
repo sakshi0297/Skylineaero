@@ -1,4 +1,4 @@
-/* Theme Description
+ Theme Description
 -------------------------------------------------
 
 	  Theme Name:
@@ -124,6 +124,13 @@
 /* line 75, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_variables.scss */
 .boxed-btn.large-width {
   width: 220px;
+}
+
+.login-btn{
+  padding: 5px 10px !important;
+  background: #ff3500 !important;
+  color: #fff !important;
+  border-radius: 5px;
 }
 
 /*--
@@ -593,6 +600,80 @@ hr {
   box-shadow: none;
 }
 
+.slick-dots li{
+  display: inline-block;
+  padding: 0px 3px;
+}
+
+.slick-dots li button:hover{
+  cursor: pointer;
+}
+
+.slick-dots li button{
+  color: transparent;
+  border: none;
+  height: 10px;
+  width: 40px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.slick-dots li.slick-active button{
+  background: #FF3514;
+}
+
+.single-mam-img{
+  border: 1px solid #000;
+  /*border-radius: 10px;*/
+}
+
+.slick-slide {
+  margin: 0px 10px !important;
+  /*border: 1px solid #000;*/
+  
+}
+.slick-active{
+  /*margin: 0px 30px !important;*/
+}
+
+.three-product-slider .slick-slide.slick-current img, .three-product-slider .slick-slide.slick-center img {
+  /*transform: scale(1.3);*/
+  /*border: 5px solid gray;*/
+  border-radius: 10px;
+  
+}
+.three-product-slider .slick-slide.slick-current, .three-product-slider.slick-slide.slick-center {
+  transform: scale(1.4);
+  /*margin: 0px 10px !important;*/
+  /*border-radius: 10px;*/
+  /*border: 1px solid gray;*/
+  /*border-radius: 10px;*/
+}
+
+/*vertical up-down image css*/
+img.vert-move {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+.main-background{
+  background-image: url(../img/gallery/carousel/rotate-drone.jpg);
+  background-size: cover;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+
+
 /* line 320, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
 .about-btn {
   padding: 18px 43px;
@@ -702,6 +783,36 @@ hr {
   overflow: hidden;
   margin: 0;
 }
+
+.slick-dots{
+  position: absolute;
+  bottom: 25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li { 
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button { 
+  border: 0;
+  display: block;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; } 
 
 @media (max-width: 575px) {
   /* line 393, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
@@ -3662,13 +3773,13 @@ hr {
 
 /* line 1, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
 .slider-height {
-  height: 765px;
+  height: 500px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 1, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-height {
-    height: 765px;
+    height: 500px;
   }
 }
 
@@ -3734,15 +3845,71 @@ hr {
 .single-slider-1{
   background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part6.jpg);
   background-size: cover;
+  background-position: center center;
 }
 .single-slider-2{
-  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part8.jpg);
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero2.jpg);
   background-size: cover;
+  background-position: center center;
 }
 .single-slider-3{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.single-slider-4{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero4.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.single-slider-5{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero5.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.single-slider-6{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero6.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.single-slider-7{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero7.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.hot-single-slider-1{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part6.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.hot-single-slider-2{
   background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part9.jpg);
   background-size: cover;
+  background-position: center center;
 }
+.hot-single-slider-3{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/part8.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+/*.single-main-img-bg1{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero7.jpg) !important;
+  background-color: none;
+  background-size: cover;
+  background-position: center center;
+}
+.single-main-img-bg2{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero7.jpg) !important;
+  background: none;
+  background-size: cover;
+  background-position: center center;
+}
+.single-main-img-bg3{
+  background-image: linear-gradient(45deg, rgba(25, 50, 50, 0.1), rgba(0, 12, 12, .5)), url(../img/gallery/carousel/hero7.jpg) !important;
+  background: none;
+  background-size: cover;
+  background-position: center center;
+}*/
 
 /* line 44, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption {
@@ -4785,18 +4952,26 @@ hr {
   z-index: 2;
   opacity: 1;
   visibility: visible;
-  height: 50px;
+  height: 101%;
   width: 50px;
   line-height: 60px;
   cursor: pointer;
   background: #fff;
 }
 
+.slick-prev.slick-arrow{
+  left: 0px;
+  background: #ff3514 !important;
+}
+.ti-angle-left{
+  color: #fff !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 234, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
   .man-slider-active button.slick-arrow, .three-product-slider-active button.slick-arrow {
     line-height: 40px;
-    height: 40px;
+    height: 101%;
     width: 40px;
     right: 40px;
   }
@@ -4806,7 +4981,7 @@ hr {
   /* line 234, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
   .man-slider-active button.slick-arrow, .three-product-slider-active button.slick-arrow{
     line-height: 40px;
-    height: 40px;
+    height: 101%;
     width: 40px;
     right: 40px;
   }
@@ -8775,4 +8950,4 @@ del {
   margin-bottom: 10px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map 
