@@ -814,6 +814,10 @@ img.vert-move {
 }
 .slick-dots li button:hover, .slick-dots li button:focus { outline: none; } 
 
+.hotdeals-ul li{
+  padding-bottom: 35px;
+}
+
 @media (max-width: 575px) {
   /* line 393, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
   .border-btn {
@@ -880,7 +884,7 @@ img.vert-move {
   height: 50px;
   width: 50px;
   right: 31px;
-  bottom: 18px;
+  bottom: 50px;
   position: fixed;
   color: #fff;
   font-size: 20px;
@@ -3925,7 +3929,7 @@ img.vert-move {
 
 /* line 63, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption h1 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 14px;
   color: #fff;
@@ -3937,7 +3941,7 @@ img.vert-move {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 63, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption h1 {
-    font-size: 70px;
+    font-size: 50px;
     line-height: 1.2;
   }
 }
@@ -3945,7 +3949,7 @@ img.vert-move {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 63, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
   .slider-area .hero__caption h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.2;
   }
 }
@@ -3966,9 +3970,18 @@ img.vert-move {
   }
 }
 
+.bottom-title{
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  position: absolute;
+  bottom: 0;
+}
+
 /* line 88, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_h1-hero.scss */
 .slider-area .hero__caption p {
-  font-size: 27px;
+  font-size: 20px;
   color: #fff;
   font-family: "Muli", sans-serif;
   margin-bottom: 50px;
@@ -4953,7 +4966,7 @@ img.vert-move {
   opacity: 1;
   visibility: visible;
   height: 101%;
-  width: 50px;
+  width: 40px;
   line-height: 60px;
   cursor: pointer;
   background: #fff;
