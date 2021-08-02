@@ -628,7 +628,7 @@ hr {
 }
 
 .slick-slide {
-  margin: 0px 10px !important;
+  margin: 0px 0px !important;
   /*border: 1px solid #000;*/
   
 }
@@ -815,7 +815,9 @@ img.vert-move {
 .slick-dots li button:hover, .slick-dots li button:focus { outline: none; } 
 
 .hotdeals-ul li{
+  padding-left: 20px;
   padding-bottom: 35px;
+  padding-top: 35px;
 }
 
 @media (max-width: 575px) {
@@ -4974,7 +4976,7 @@ img.vert-move {
 
 .slick-prev.slick-arrow{
   left: 0px;
-  background: #ff3514 !important;
+  background: #fff !important;
 }
 .ti-angle-left{
   color: #fff !important;
@@ -5019,7 +5021,7 @@ img.vert-move {
 /* line 282, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
 .man-slider-active button.slick-next, .three-product-slider-active button.slick-next {
   right: 0px;
-  background: #FF3514;
+  background: #fff;
 }
 
 /* line 286, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_contact_form.scss */
