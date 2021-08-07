@@ -447,10 +447,13 @@ hr {
   margin-bottom: 90px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 182, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
   .mb-90 {
     margin-bottom: 30px;
+  }
+  .logoImg{
+    width: 15% !important;
   }
 }
 
@@ -832,6 +835,9 @@ img.vert-move {
   /* line 393, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_common.scss */
   .border-btn {
     display: none;
+  }
+  .logoImg{
+    width: 30% !important;
   }
 }
 
@@ -3687,7 +3693,7 @@ img.vert-move {
 
 /* line 240, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
 .mobile_menu .slicknav_menu .slicknav_btn {
-  top: -32px;
+  top: -40px;
 }
 
 /* line 243, C:/Users/HP/Desktop/jun-2020/280.Industrial_HTML/assets/scss/_headerMenu.scss */
